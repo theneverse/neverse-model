@@ -4,8 +4,8 @@ import (
 	"crypto/sha256"
 	"encoding/json"
 
-	"github.com/meshplus/bitxhub-kit/hexutil"
-	"github.com/meshplus/bitxhub-kit/types"
+	"github.com/theneverse/neverse-kit/hexutil"
+	"github.com/theneverse/neverse-kit/types"
 )
 
 func (m *Receipt) Hash() *types.Hash {
@@ -42,7 +42,7 @@ type Log struct {
 	Removed     bool           `json:"removed"`
 }
 
-//MarshalJSON marshals as JSON.
+// MarshalJSON marshals as JSON.
 func (l EvmLog) MarshalJSON() ([]byte, error) {
 	var enc Log
 

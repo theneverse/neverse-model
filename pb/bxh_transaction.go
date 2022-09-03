@@ -7,10 +7,10 @@ import (
 	"math/big"
 
 	"github.com/gogo/protobuf/proto"
-	"github.com/meshplus/bitxhub-kit/crypto"
-	"github.com/meshplus/bitxhub-kit/crypto/asym"
-	"github.com/meshplus/bitxhub-kit/crypto/asym/ecdsa"
-	"github.com/meshplus/bitxhub-kit/types"
+	"github.com/theneverse/neverse-kit/crypto"
+	"github.com/theneverse/neverse-kit/crypto/asym"
+	"github.com/theneverse/neverse-kit/crypto/asym/ecdsa"
+	"github.com/theneverse/neverse-kit/types"
 )
 
 var _ Transaction = (*BxhTransaction)(nil)

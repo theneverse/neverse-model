@@ -5,11 +5,11 @@ import (
 	"math/big"
 	"testing"
 
-	"github.com/meshplus/bitxhub-kit/crypto/asym/ecdsa"
-	"github.com/meshplus/bitxhub-kit/hexutil"
-	"github.com/meshplus/bitxhub-kit/types"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
+	"github.com/theneverse/neverse-kit/crypto/asym/ecdsa"
+	"github.com/theneverse/neverse-kit/hexutil"
+	"github.com/theneverse/neverse-kit/types"
 )
 
 const (

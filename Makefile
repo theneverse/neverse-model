@@ -2,7 +2,8 @@ all: pb grpc
 
 pb:
 	cd pb && protoc -I=. \
-	-I${GOPATH}/src \
+	-I=${GOPATH}/src \
+	-I=${GOPATH}/src/github.com/gogo/protobuf/protobuf \
 	--gogofaster_out=:. \
 	block.proto ibtp.proto network.proto receipt.proto bxh_transaction.proto chain.proto arg.proto interchain_meta.proto plugin.proto vp_info.proto basic.proto audit_info.proto tss_info.proto
 

@@ -1,6 +1,6 @@
 package constant
 
-import "github.com/meshplus/bitxhub-kit/types"
+import "github.com/theneverse/neverse-kit/types"
 
 type BoltContractAddress string
 

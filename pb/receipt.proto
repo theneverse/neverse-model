@@ -11,14 +11,14 @@ message Receipt {
         FAILED = 1;
     }
     bytes version = 1;
-    bytes tx_hash = 2 [(gogoproto.customtype) = "github.com/meshplus/bitxhub-kit/types.Hash"];
+    bytes tx_hash = 2 [(gogoproto.customtype) = "github.com/theneverse/neverse-kit/types.Hash"];
     bytes ret = 3;
     Status status = 4;
     repeated Event events = 5;
     uint64 gas_used = 6;
     repeated EvmLog evm_logs = 7;
-    bytes bloom = 8 [(gogoproto.customtype) = "github.com/meshplus/bitxhub-kit/types.Bloom"];
-    bytes contract_address = 9 [(gogoproto.customtype) = "github.com/meshplus/bitxhub-kit/types.Address"];
+    bytes bloom = 8 [(gogoproto.customtype) = "github.com/theneverse/neverse-kit/types.Bloom"];
+    bytes contract_address = 9 [(gogoproto.customtype) = "github.com/theneverse/neverse-kit/types.Address"];
     TransactionStatus tx_status = 10;
 }
 
@@ -45,26 +45,26 @@ message Event {
         SERVICE = 12;
     }
     // Transaction Hash
-    bytes tx_hash = 1 [(gogoproto.customtype) = "github.com/meshplus/bitxhub-kit/types.Hash"];
+    bytes tx_hash = 1 [(gogoproto.customtype) = "github.com/theneverse/neverse-kit/types.Hash"];
     bytes data = 2;
     // Event Type: interchain, nodemgr
     EventType event_type = 3;
 }
 
 message EvmLog {
-    bytes address = 1 [(gogoproto.customtype) = "github.com/meshplus/bitxhub-kit/types.Address"];
+    bytes address = 1 [(gogoproto.customtype) = "github.com/theneverse/neverse-kit/types.Address"];
 
-    repeated bytes topics = 2 [(gogoproto.customtype) = "github.com/meshplus/bitxhub-kit/types.Hash"];
+    repeated bytes topics = 2 [(gogoproto.customtype) = "github.com/theneverse/neverse-kit/types.Hash"];
 
     bytes data = 3;
 
     uint64 blockNumber = 4;
 
-    bytes transactionHash = 5 [(gogoproto.customtype) = "github.com/meshplus/bitxhub-kit/types.Hash"];
+    bytes transactionHash = 5 [(gogoproto.customtype) = "github.com/theneverse/neverse-kit/types.Hash"];
 
     uint64 transactionIndex = 6;
 
-    bytes blockHash = 7 [(gogoproto.customtype) = "github.com/meshplus/bitxhub-kit/types.Hash"];
+    bytes blockHash = 7 [(gogoproto.customtype) = "github.com/theneverse/neverse-kit/types.Hash"];
 
     uint64 logIndex = 8;
 

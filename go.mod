@@ -7,16 +7,16 @@ require (
 	github.com/gogo/protobuf v1.3.2
 	github.com/golang/protobuf v1.5.2
 	github.com/grpc-ecosystem/grpc-gateway v1.16.0
-	github.com/meshplus/bitxhub-kit v1.2.1-0.20210902085548-07f4fa85bfc9
 	github.com/stretchr/testify v1.7.2
+	github.com/theneverse/neverse-kit v0.0.0-20220903070058-cf115e048a59
 	google.golang.org/genproto v0.0.0-20200526211855-cb27e3aa2013
 	google.golang.org/grpc v1.33.1
 )
 
 require (
+	github.com/btcsuite/btcd v0.21.0-beta // indirect
 	github.com/davecgh/go-spew v1.1.1 // indirect
 	github.com/pmezard/go-difflib v1.0.0 // indirect
-	github.com/theneverse/neverse-kit v0.0.0-20220903070058-cf115e048a59 // indirect
 	golang.org/x/crypto v0.0.0-20201117144127-c1f2f97bffc9 // indirect
 	golang.org/x/net v0.0.0-20201021035429-f5854403a974 // indirect
 	golang.org/x/sys v0.0.0-20200930185726-fdedc70b468f // indirect

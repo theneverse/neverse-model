@@ -3,8 +3,8 @@ package pb
 import (
 	"testing"
 
-	"github.com/meshplus/bitxhub-kit/types"
 	"github.com/stretchr/testify/assert"
+	"github.com/theneverse/neverse-kit/types"
 )
 
 func TestInterchain_Marshal(t *testing.T) {

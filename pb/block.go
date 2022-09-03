@@ -3,7 +3,7 @@ package pb
 import (
 	"crypto/sha256"
 
-	"github.com/meshplus/bitxhub-kit/types"
+	"github.com/theneverse/neverse-kit/types"
 )
 
 func (m *Block) Hash() *types.Hash {

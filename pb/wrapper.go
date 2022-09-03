@@ -3,7 +3,7 @@ package pb
 import (
 	"sort"
 
-	"github.com/meshplus/bitxhub-kit/types"
+	"github.com/theneverse/neverse-kit/types"
 )
 
 type InterchainMeta struct {

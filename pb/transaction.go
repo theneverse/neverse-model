@@ -6,7 +6,7 @@ import (
 	"math/big"
 
 	proto "github.com/gogo/protobuf/proto"
-	"github.com/meshplus/bitxhub-kit/types"
+	"github.com/theneverse/neverse-kit/types"
 )
 
 type TxConstructer func() Transaction

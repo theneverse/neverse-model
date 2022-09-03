@@ -8,7 +8,7 @@ import (
 	fmt "fmt"
 	_ "github.com/gogo/protobuf/gogoproto"
 	proto "github.com/gogo/protobuf/proto"
-	github_com_meshplus_bitxhub_kit_types "github.com/meshplus/bitxhub-kit/types"
+	github_com_meshplus_bitxhub_kit_types "github.com/theneverse/neverse-kit/types"
 	_ "google.golang.org/genproto/googleapis/api/annotations"
 	grpc "google.golang.org/grpc"
 	codes "google.golang.org/grpc/codes"
@@ -1060,10 +1060,10 @@ func (m *VerifiedTx) GetIsBatch() bool {
 }
 
 type InterchainTxWrapper struct {
-	L2Roots        []github_com_meshplus_bitxhub_kit_types.Hash `protobuf:"bytes,1,rep,name=l2Roots,proto3,customtype=github.com/meshplus/bitxhub-kit/types.Hash" json:"l2Roots,omitempty"`
+	L2Roots        []github_com_meshplus_bitxhub_kit_types.Hash `protobuf:"bytes,1,rep,name=l2Roots,proto3,customtype=github.com/theneverse/neverse-kit/types.Hash" json:"l2Roots,omitempty"`
 	Transactions   []*VerifiedTx                                `protobuf:"bytes,2,rep,name=transactions,proto3" json:"transactions,omitempty"`
 	Height         uint64                                       `protobuf:"varint,3,opt,name=height,proto3" json:"height,omitempty"`
-	TimeoutL2Roots []github_com_meshplus_bitxhub_kit_types.Hash `protobuf:"bytes,4,rep,name=timeout_l2Roots,json=timeoutL2Roots,proto3,customtype=github.com/meshplus/bitxhub-kit/types.Hash" json:"timeout_l2Roots,omitempty"`
+	TimeoutL2Roots []github_com_meshplus_bitxhub_kit_types.Hash `protobuf:"bytes,4,rep,name=timeout_l2Roots,json=timeoutL2Roots,proto3,customtype=github.com/theneverse/neverse-kit/types.Hash" json:"timeout_l2Roots,omitempty"`
 	TimeoutIbtps   []string                                     `protobuf:"bytes,5,rep,name=timeout_ibtps,json=timeoutIbtps,proto3" json:"timeout_ibtps,omitempty"`
 	MultiTxIbtps   []string                                     `protobuf:"bytes,6,rep,name=multi_tx_ibtps,json=multiTxIbtps,proto3" json:"multi_tx_ibtps,omitempty"`
 }

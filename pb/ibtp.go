@@ -6,7 +6,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/meshplus/bitxhub-kit/types"
+	"github.com/theneverse/neverse-kit/types"
 )
 
 func (m *IBTP) ID() string {
